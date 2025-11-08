@@ -1,0 +1,45 @@
+<section class="breadcrumb breadcrumb_bg">
+  <div class="container text-center">
+    <div class="breadcrumb_iner_item">
+      <h2>📘 عرض امتحان الباكالوريا</h2>
+      <p>يمكنك تصفّح الامتحان مباشرة بدون تحميل ⬇️</p>
+    </div>
+  </div>
+</section>
+ 
+
+<section class="pdf_viewer section_padding" style="background:#f9fbfd;">
+  <div class="container text-center">
+    <h3 class="mb-4">{{ bacTitle }}</h3>
+ <section class="specialite_intro " style="background: #f9fbfd;">
+      <div class="container">
+          
+            
+                  <app-annonces-in-article></app-annonces-in-article>
+              
+        
+      </div>
+  </section>
+    <div class="embed-responsive" style="height:80vh;">
+      <iframe
+        *ngIf="pdfUrl"
+        [src]="pdfUrl | safe"
+        width="100%"
+        height="100%"
+        frameborder="0">
+      </iframe>
+    </div>
+ <section class="specialite_intro " style="background: #f9fbfd;">
+      <div class="container">
+          
+            
+                  <app-annonces-in-article></app-annonces-in-article>
+              
+        
+      </div>
+  </section>
+    <div class="mt-4">
+      <a routerLink="/BacExamples" class="btn btn_1">⬅️ الرجوع إلى الامتحانات</a>
+    </div>
+  </div>
+</section>

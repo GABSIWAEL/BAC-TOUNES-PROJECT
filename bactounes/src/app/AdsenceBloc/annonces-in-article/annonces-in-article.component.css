@@ -1,0 +1,18 @@
+.ad-placeholder {
+    background-color: #e0e0e0;
+    /* light grey background */
+    color: #555;
+    /* darker text */
+    text-align: center;
+    /* center the text */
+    padding: 100px 0;
+    /* height of the block */
+    margin: 2px 0;
+    /* space around the block */
+    border: 2px dashed #aaa;
+    /* dashed border for testing */
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 8px;
+    /* slightly rounded corners */
+}

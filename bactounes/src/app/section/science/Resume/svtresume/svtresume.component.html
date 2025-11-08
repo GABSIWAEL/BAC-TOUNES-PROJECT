@@ -1,0 +1,54 @@
+<section class="breadcrumb breadcrumb_bg">
+  <div class="container text-center">
+    <div class="breadcrumb_iner_item">
+      <h2>🧠 ملخصات علوم الحياة والأرض</h2>
+      <p>اختصر دروسك بطريقة ذكية وسهلة 💡</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="resumes_section " style="background-color:#f9fbfd;">
+   <section class="specialite_intro " style="background: #f9fbfd;">
+    <div class="container">
+        
+           
+                <app-annonces-in-article></app-annonces-in-article>
+            
+       
+    </div>
+</section>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-12 text-center mb-4">
+        <h3 style="font-weight:700;">📘 تصفّح الملخصات</h3>
+        <p style="color:#666;">اختار من بين الملخصات الجاهزة للمراجعة السريعة 👇</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Example of 10 résumé cards -->
+      <div class="col-md-4 col-lg-3 mb-4" *ngFor="let resume of resumes">
+        <div class="card shadow-sm rounded-lg">
+          <img [src]="resume.image" class="card-img-top" alt="Résumé Image">
+          <div class="card-body text-center">
+            <h5 class="card-title">{{ resume.title }}</h5>
+            <p class="card-text text-muted">{{ resume.pages }} صفحات</p>
+            <a [routerLink]="['/ScienceExprimentales/SVT/Resumes', resume.id]" class="btn btn_1">عرض</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <section class="specialite_intro " style="background: #f9fbfd;">
+    <div class="container">
+        
+           
+                <app-annonces-in-article></app-annonces-in-article>
+            
+       
+    </div>
+</section>
+</section>
+

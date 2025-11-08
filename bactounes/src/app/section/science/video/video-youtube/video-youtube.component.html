@@ -1,0 +1,46 @@
+<section class="breadcrumb breadcrumb_bg">
+  <div class="container text-center">
+    <div class="breadcrumb_iner_item">
+      <h2>🎥 عرض الفيديو</h2>
+      <p>تفرّج على الدرس مباشرة من اليوتيوب بدون مغادرة الموقع 👇</p>
+    </div>
+  </div>
+</section>
+ <section class="specialite_intro " style="background: #f9fbfd;">
+    <div class="container">
+        
+           
+                <app-annonces-in-article></app-annonces-in-article>
+            
+       
+    </div>
+</section>
+<section class="video_viewer " style="background:#f9fbfd;">
+  <div class="container text-center">
+    <h3 class="mb-4">{{ videoTitle }}</h3>
+
+    <div class="embed-responsive" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:20px;">
+      <iframe
+        *ngIf="videoUrl"
+        [src]="videoUrl | safe"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        style="position:absolute;top:0;left:0;width:100%;height:100%;">
+      </iframe>
+    </div>
+
+    <div class="mt-4">
+      <a routerLink="/ScienceExprimentales/SVT/Videos" class="btn btn_1">⬅️ الرجوع إلى الفيديوهات</a>
+    </div>
+  </div>
+</section>
+ <section class="specialite_intro " style="background: #f9fbfd;">
+    <div class="container">
+        
+           
+                <app-annonces-in-article></app-annonces-in-article>
+            
+       
+    </div>
+</section>

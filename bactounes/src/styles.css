@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+ .specialite_intro {
+            background-color: #f9fbfd;
+            padding: 80px 0;
+            direction: rtl;
+            /* Arabic alignment */
+            text-align: right;
+        }
+
+        .specialite_intro h2,
+        .specialite_intro h5 {
+            font-family: "Cairo", sans-serif;
+        }
+
+        .subject_buttons .btn_1 {
+            background-color: #005bea;
+            color: #fff !important;
+            border-radius: 12px;
+            padding: 10px 18px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .subject_buttons .btn_1:hover {
+            background-color: #007bff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Improve responsiveness */
+        @media (max-width: 767px) {
+            .specialite_intro {
+                text-align: center;
+            }
+
+            .specialite_intro .subject_buttons a {
+                display: block;
+                width: 80%;
+                margin: 10px auto;
+            }
+        }
